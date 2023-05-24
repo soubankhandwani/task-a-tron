@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding:  0;
+	margin:  0;
+	font-family: Poppins;
+}
+
+html, body {
+	background-image: url(../static/background.png);
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 100%;
+}
+
+.header {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.sub-header {
+	font-size:  2rem;
+	font-weight: 400;
+}
+
+.headers-wrapper {
+	margin:  2rem 0 4rem 0;
+}
+
+.linear-wipe {
+  background: linear-gradient(to right, #50e6ff 20%, #A459D1 40%, #A459D1 60%, #50e6ff 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+ }
+
+ .tasks-content-wrapper {
+ 	width: 100%;
+ 	height: 100%;
+ 	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	border-radius: ;backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	padding:  0 2rem 0 2rem;
+ }
+
+ .your-tasks {
+ 	color:  #fff;
+ 	font-weight: 700;
+ 	font-size: 3.5rem;
+ }
+
+ .task-items {
+ 	padding:  1rem 1rem 1rem 0rem;
+ 	margin: 0 .5rem 2rem .5rem;
+ 	cursor:  pointer;
+
+ 	background: rgba( 255, 255, 255, 0.6 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 4.5px );
+	-webkit-backdrop-filter: blur( 4.5px );
+	border-radius: 5px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	-webkit-box-shadow: 0px 0px 92px -21px rgba(0,225,255,1);
+	-moz-box-shadow: 0px 0px 92px -21px rgba(0,225,255,1);
+	box-shadow: 0px 0px 92px -21px rgba(0,225,255,1);
+ }
+
+ .task-items i {
+ 	font-size: 2rem;
+ }
+
+ .col-sm-4 {
+ 	display: flex;
+ 	height: 7rem;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+.add-task-wrapper {
+ 	display: flex;
+ 	height: 15rem;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ .task-name {
+ 	font-size: 2rem;
+ }
+
+ .task-time {
+ 	font-size: 2rem;
+ }
+
+.finish-btn {
+	outline: none;
+	border: 0;
+	padding: 1.5rem 3.75rem;
+	background-color: #00bad9;
+	color:  #fff;
+	font-size: 1.75rem;
+	font-weight: 700;
+	transition: background-color .3s ease-in-out;
+}
+
+#add-task-btn {
+		outline: none;
+		border: none;
+		background-color: #A459D1;
+		color: #fff;
+		font-size: 2rem;
+		font-weight: 500;
+		padding: 1.5rem 3.75rem;
+		border-radius: 3rem;
+		transition: background-color .3s ease-in-out;
+}
+
+/*Hover*/
+
+.finish-btn:hover {
+	background-color: #008ba2;
+}
+
+#add-task-btn:hover {
+	background-color: #782fa4;
+}
+
+ /*Animations*/
+
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+}
+
+/*Media Queries*/
+
